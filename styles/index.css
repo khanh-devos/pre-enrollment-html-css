@@ -1,5 +1,5 @@
-* {
-  padding: 5px 2px;
+*:not(#iframe) {
+  padding: 2px 2px;
 }
 
 body {
@@ -13,10 +13,11 @@ header {
 
 main {
   border: 1px solid black;
-  height: 60%;
+  height: 500px;
+  max-height: 60%;
   
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
   
 }
 
@@ -24,9 +25,37 @@ main {
   border: 1px solid green;
   margin-right: 5px;
 }
+
 #right-side {
-  border: 1px solid blue;  
+  border: 1px solid blue;
+  overflow-y: scroll;
 }
+.figures {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+.figures img {
+  border-radius: 10px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 120px;
+}
+.figures article {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: grey;
+  line-height: 1.2em;
+}
+.figures article:nth-child(1) {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.5em;
+
+}
+
 
 footer {
   border: 1px solid orange;
